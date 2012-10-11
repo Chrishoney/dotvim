@@ -1,9 +1,6 @@
 [submodule "bundle/python.vim"]
 	path = bundle/python.vim
 	url = git://github.com/vim-scripts/python.vim.git
-[submodule "bundle/django.vim"]
-	path = bundle/django.vim
-	url = git://github.com/vim-scripts/django.vim--Ronacher.git
 [submodule "bundle/jinja.vim"]
 	path = bundle/jinja.vim
 	url = git://github.com/vim-scripts/Jinja.git
@@ -28,3 +25,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/djangosurround"]
+	path = bundle/djangosurround
+	url = git@github.com:Chrishoney/vim-surround-htmldjango.git
