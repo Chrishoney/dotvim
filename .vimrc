@@ -6,17 +6,15 @@
 "--------------------------------------"
 " startup "
 "---------"
+set nocompatible
 
 " enable pathogen to load plugins from ~/.vim/bundle
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
-set nocompatible
 
 " colorscheme "
 "-------------"
-
-" solarized
 set background=dark
 colorscheme solarized
 syntax enable
@@ -41,6 +39,7 @@ set shiftwidth=4
 
 " document "
 "----------"
+set encoding=utf-8
 set autoindent
 set textwidth=80
 
@@ -53,6 +52,7 @@ set textwidth=80
 "--------"
 autocmd BufRead *.py set cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd BufRead *.py set textwidth=79
+autocmd BufRead *.py let python_highlight_space_errors=1
 
 " dotfiles "
 "----------"
@@ -124,19 +124,14 @@ nnoremap <leader>]] 10<C-w>+
 "--------------------------------------"
 " django surround "
 "-----------------"
-" insert mode "
-"- - - - - - -"
 
 " insert {%  %} ready for input
-inoremap <leader>t <C-g>s%
+map <leader>t i<C-g>s%
 " insert {{  }} ready for input
-inoremap <leader>v <C-g>sv
+map <leader>v i<C-g>sv
 " insert {% block  %} ready for input
-inoremap <leader>b <C-g>s%block <Esc>a
-
-" normal mode "
-"- - - - - - -"
+map <leader>b i<C-g>s%block <Esc>a
 " insert {% endblock %} , move cursor to end-of-line
-nnoremap <leader>B i<C-g>s%endblock<Esc>$
+map <leader>B i<C-g>s%endblock<Esc>$
 
 "----------------------------------------------------------------------"
