@@ -28,3 +28,6 @@
 [submodule "bundle/djangosurround"]
 	path = bundle/djangosurround
 	url = git@github.com:Chrishoney/vim-surround-htmldjango.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
