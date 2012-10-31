@@ -143,19 +143,4 @@ map <leader>b i<C-g>s%block <Esc>a
 " insert {% endblock %} , move cursor to end-of-line
 map <leader>B i<C-g>s%endblock<Esc>$
 
-" minibufexpl "
-"-------------"
-
-" make buffer switching work like irssi"
-"--------------------------------------"
-nmap <leader>0 :0b<cr>
-nmap <leader>1 :1b<cr>
-nmap <leader>2 :2b<cr>
-nmap <leader>3 :3b<cr>
-nmap <leader>4 :4b<cr>
-nmap <leader>5 :5b<cr>
-nmap <leader>6 :6b<cr>
-nmap <leader>7 :7b<cr>
-nmap <leader>8 :8b<cr>
-nmap <leader>9 :9b<cr>
 "----------------------------------------------------------------------"
