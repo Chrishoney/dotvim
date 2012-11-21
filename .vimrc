@@ -20,10 +20,11 @@ syntax enable
 
 " display "
 "---------"
-set showcmd
-set showmode
+set laststatus=2
 set number
 set ruler
+set showmode
+set showcmd
 
 " search "
 "--------"
@@ -81,6 +82,22 @@ let g:miniBufExplMapCTagSwitchBufs = 1
 "-------------"
 " insert mode, jj = <Esc>
 :imap jj <Esc>
+
+" unfuck (lack of) command binds. what awful default binds for the
+" two most frequently used ex commands in vim. write and quit deserve
+" better.
+"
+" bram moolenaar, if you read this, repeat the following out loud:
+"
+" 'I will set :W and :Q to :w and :q by default. I chose not to do
+" so, and because of this, hundreds of thousands of hours have been
+" wasted. Next time I choose default binds, I will dual-bind common
+" misspellings or mistypings. I chose not to do so, and for this reason,
+" I am stupid. Kick me in the face irl if you see me before I fix this.'
+:command W w
+:command Q q
+:command Wq wq
+:command WQ wq
 
 "----------------------------------------------------------------------"
 " key binds                                                            "
