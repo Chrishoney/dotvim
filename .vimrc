@@ -63,6 +63,10 @@ au BufNewFile,BufRead .bashrc,.bash_profile,.bash_aliases,.bash_functions,.profi
 au BufNewFile,BufRead *.html set filetype=htmldjango textwidth=120
 au BufNewFile,BufRead *.html set tabstop=4 softtabstop=2 shiftwidth=2
 
+" markdown "
+"----------"
+au BufRead *.md set filetype=markdown
+
 "--------------------------------------------------------------------"
 " settings                                                           "
 "--------------------------------------------------------------------"
@@ -83,7 +87,8 @@ let g:miniBufExplMapCTagSwitchBufs = 1
 " insert mode, jj = <Esc>
 :imap jj <Esc>
 
-" misspellings
+" two of the most frequently used commands in vim have terrible default
+" behavior. this should be enabled by default.
 :command W w
 :command Q q
 :command Wq wq
@@ -132,3 +137,20 @@ nnoremap <leader>[ <C-w>-
 nnoremap <leader>] <C-w>+
 nnoremap <leader>[[ 10<C-w>-
 nnoremap <leader>]] 10<C-w>+
+
+" buffers "
+"---------"
+
+" add new buffer
+nnoremap <leader>bad :bad 
+
+" show buffers
+nnoremap <leader>b :buffers<CR>
+
+" prev/next buffer
+nnoremap <leader>bp :bp<CR>
+nnoremap <leader>bn :bn<CR>
+
+" jump to first/last buffer
+nnoremap <leader>bf :bf<CR>
+nnoremap <leader>bl :bl<CR>
